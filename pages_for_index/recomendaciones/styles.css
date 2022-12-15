@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Secular+One&display=swap");
+
+body {
+  font-family: "Secular One", sans-serif;
+}
+
+:root {
+  --blanco: white;
+  --gray: rgb(159, 159, 159);
+  --degradado: linear-gradient(90deg, var(--white), var(--gray));
+}
+
+* {
+  font-family: "Secular One", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  text-transform: capitalize;
+}
+
+*::selection {
+  background: var(--white);
+  color: gray;
+}
+
+html {
+  font-size: 100%;
+}
+
+header {
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: black;
+  box-shadow: 0.3rem 1rem rgba(50, 50, 50, 0.2);
+  padding: 2rem 9%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+}
+
+header .logo {
+  font-size: 2rem;
+  color: white;
+}
+
+header .logo span {
+  color: var(--gray);
+}
+
+header .navbar a {
+  font-size: 1.2 rem;
+  margin-left: 2rem;
+  color: var(--blanco);
+  position: relative;
+  top: 0;
+  transition: top ease 0.5s;
+}
+
+header .navbar a:hover {
+  color: bisque;
+  transition: all 0.5s;
+  top: -5px;
+}
+
+header input {
+  display: none;
+}
+
+header label {
+  cursor: pointer;
+  visibility: hidden;
+  opacity: 0;
+}
+
+* {
+  font-family: "Secular One", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  text-transform: capitalize;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  background: #fff;
+}
+
+#seccionBienvenida{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+  margin-top: 140px;
+  margin-left: 450px;
+}
+
+.secciones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    width: 300px;
+    height: 500px;
+    background-color: rgb(238, 238, 238);
+    margin-left: 60px;
+    border-radius: 40px;
+    padding-bottom: 40px;
+    transition: all 0.3s;
+}
+
+.secciones:hover {
+transform: scale(1.05);
+transition: all 0.3s;
+box-shadow: 5px 5px 20px 2px gray;
+}
+
+.secciones h1{
+  font-size: 1.5rem;
+}
+
+.secciones h2{
+  font-size: .8rem;
+}
+
+.secciones p{
+  font-size: large;
+}
+
+.secciones div img{
+  opacity: 0.8;
+}
+
+#contenedorSecciones{
+  display: flex;
+}
+
+.boton{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(211, 211, 211);
+  height: 100px;
+  width: 100px;
+  border-radius: 10px;
+  color: black;
+}
+
+.boton:hover{
+  background-color: #fff;
+}

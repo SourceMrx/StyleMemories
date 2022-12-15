@@ -1,0 +1,306 @@
+@import url("https://fonts.googleapis.com/css2?family=Secular+One&display=swap");
+
+body {
+  font-family: "Secular One", sans-serif;
+}
+
+:root {
+  --blanco: white;
+  --gray: rgb(159, 159, 159);
+  --degradado: linear-gradient(90deg, var(--white), var(--gray));
+}
+
+* {
+  font-family: "Secular One", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  text-transform: capitalize;
+}
+
+*::selection {
+  background: var(--white);
+  color: gray;
+}
+
+html {
+  font-size: 100%;
+}
+
+header {
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: black;
+  box-shadow: 0.3rem 1rem rgba(50, 50, 50, 0.2);
+  padding: 2rem 9%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+}
+
+header .logo {
+  font-size: 2rem;
+  color: white;
+}
+
+header .logo span {
+  color: var(--gray);
+}
+
+header .navbar a {
+  font-size: 1.2 rem;
+  margin-left: 2rem;
+  color: var(--blanco);
+  position: relative;
+  top: 0;
+  transition: top ease 0.5s;
+}
+
+header .navbar a:hover {
+  color: bisque;
+  transition: all 0.5s;
+  top: -5px;
+}
+
+header input {
+  display: none;
+}
+
+header label {
+  cursor: pointer;
+  visibility: hidden;
+  opacity: 0;
+}
+
+* {
+  font-family: "Secular One", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  text-transform: capitalize;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  background: #fff;
+}
+
+#botonCareloco {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 180px;
+}
+
+botonCareloco input:checked+label {
+  background-color: beige;
+}
+
+#seccionEstilosHombre div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  background-color: black;
+  height: 400px;
+  width: 400px;
+  margin: 20px;
+  box-shadow: 20px 10px 20px 5px rgb(96, 96, 96);
+  border-radius: 40px;
+  transition: all 0, 3s;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  -ms-border-radius: 40px;
+  -o-border-radius: 40px;
+}
+
+#seccionEstilosHombre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
+#seccionEstilosHombre div a {
+  color: white;
+  font-size: 1.3rem;
+}
+
+#seccionEstilosHombre div a:hover {
+  color: rgb(233, 231, 193);
+}
+
+#seccionEstilosHombre div h1 {
+  color: white;
+}
+
+#seccionEstilosHombre div img {
+  width: 250px;
+  height: 300px;
+  border-radius: 50px;
+  opacity: 0.4;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+
+#seccionEstilosHombre div:hover {
+  transform: scale(1.02);
+  transition: all 0.3s;
+  background-color: rgb(194, 194, 194);
+}
+
+#seccionEstilosHombre div img:hover {
+  transition: all 0.8s;
+  opacity: 1;
+}
+
+
+
+#seccionEstilosMujer div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  background-color: black;
+  height: 400px;
+  width: 400px;
+  margin: 20px;
+  box-shadow: 20px 10px 20px 5px rgb(96, 96, 96);
+  border-radius: 40px;
+  transition: all 0, 3s;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  -ms-border-radius: 40px;
+  -o-border-radius: 40px;
+}
+
+#seccionEstilosMujer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
+#seccionEstilosMujer div a {
+  color: white;
+  font-size: 1.3rem;
+}
+
+#seccionEstilosMujer div a:hover {
+  color: rgb(233, 231, 193);
+}
+
+#seccionEstilosMujer div h1 {
+  color: white;
+}
+
+#seccionEstilosMujer div img {
+  width: 250px;
+  height: 300px;
+  border-radius: 50px;
+  opacity: 0.4;
+}
+
+#seccionEstilosMujer div:hover {
+  transform: scale(1.02);
+  transition: all 0.3s;
+  background-color: rgb(194, 194, 194);
+  -webkit-transform: scale(1.02);
+  -moz-transform: scale(1.02);
+  -ms-transform: scale(1.02);
+  -o-transform: scale(1.02);
+}
+
+#seccionEstilosMujer div img:hover {
+  transition: all 0.8s;
+  opacity: 1;
+}
+
+#botonCareloco {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s;
+}
+
+#botonCareloco div input+label:hover {
+  background-color: rgb(220, 220, 220);
+  transition: all 0.3s;
+}
+
+#botonCareloco div input:checked+label{
+  background-color: black;
+  color: white;
+  transition: all 0.3s;
+}
+
+#estilosHombreSelectL {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 2px;
+  background-color: rgb(227, 227, 227);
+  height: 60px;
+  width: 140px;
+  transition: all 0.3s;
+}
+
+#estilosMujerSelectL {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+  margin-right: 2px;
+  background-color: rgb(227, 227, 227);
+  height: 60px;
+  width: 140px;
+  transition: all 0.3s;
+
+}
+
+#todosL {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  width: 140px;
+  background-color: rgb(227, 227, 227);
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+  transition: all 0.3s;
+}
+
+/* custom scroll bar */
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: whitesmoke;
+}
+
+::-webkit-scrollbar-thumb {
+  background: gray;
+  border-radius: 10px;
+}

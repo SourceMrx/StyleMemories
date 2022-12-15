@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+
+body{
+    font-family: 'Secular One', sans-serif;
+}
+
+:root {
+    --blanco: white;
+    --gray: rgb(159, 159, 159);
+    --degradado: linear-gradient(90deg, var(--white), var(--gray));
+
+}
+
+* {
+    font-family: 'Secular One', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+}
+
+*::selection {
+    background: var(--white);
+    color: gray;
+}
+
+html {
+    font-size: 100%;
+}
+
+header {
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    box-shadow: 0.3rem 1rem rgba(50, 50, 50, 0.2);
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+
+}
+
+header .logo {
+    font-size: 2rem;
+    color: white;
+}
+
+header .logo span {
+    color: var(--gray);
+}
+
+header .navbar a {
+    font-size: 1.2 rem;
+    margin-left: 2rem;
+    color: var(--blanco);
+    position: relative;
+    top: 0;
+    transition: top ease 0.5s;
+}
+
+header .navbar a:hover {
+    color: bisque;
+    transition: all 0.5s;
+    top: -5px;
+}
+
+header input {
+    display: none;
+}
+
+header label {
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+
+}
+
+
+
+
+
+
+
+
+#bienvenida{
+    display: flex;
+    flex-direction: column;
+    margin-top: 200px;
+    align-items: center;
+    justify-content: center;
+}
+
+#bienvenido{
+    color: gray;
+}
+
+#bienvenida h1{
+    font-size: 3rem;
+    height: 100px;
+    width: 1000px;
+}
+
+#bienvenida img{
+    margin-right: 100px;
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid black;
+    
+}
+
+
+#seccionPreguntas{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    width: 1000px;
+    font-size: 2rem;
+}
+
+#seccionPreguntas div a{
+    color: rgb(130, 130, 130);
+    font-size: 2.2rem;
+}
+
+.preguntas {
+ margin-left: 2rem;
+
+}
+
+.preguntas div{
+    margin-bottom: 2rem ;
+}
+
+
+
+.preguntas div input:checked+label{
+    transition: all 0.3s;
+    color: green;
+}

@@ -1,0 +1,257 @@
+@import url("https://fonts.googleapis.com/css2?family=Secular+One&display=swap");
+
+:root {
+  --blanco: white;
+  --gray: rgb(159, 159, 159);
+  --degradado: linear-gradient(90deg, var(--white), var(--gray));
+}
+
+* {
+  font-family: "Secular One", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  text-transform: capitalize;
+}
+
+*::selection {
+  background: var(--white);
+  color: gray;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  background: #fff;
+}
+
+section {
+  min-height: 100vh;
+  padding: 0.9%;
+  padding-top: 7.5rem;
+  padding-bottom: 2rem;
+}
+
+.btn {
+  display: inline-block;
+  color: white;
+  margin-top: 1rem;
+  padding: 0.8rem 3rem;
+  border-radius: 5rem;
+  background: gray;
+  font-size: 1.8rem;
+  cursor: pointer;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
+  transition: all 0.3s linear;
+  margin-left: 10rem;
+  -webkit-border-radius: 5rem;
+  -moz-border-radius: 5rem;
+  -ms-border-radius: 5rem;
+  -o-border-radius: 5rem;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+}
+
+.btn:hover {
+  transform: scale(1.08);
+  background-color: rgb(97, 97, 97);
+  -webkit-transform: scale(1.08);
+  -moz-transform: scale(1.08);
+  -ms-transform: scale(1.08);
+  -o-transform: scale(1.08);
+}
+
+header {
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: black;
+  box-shadow: 0.3rem 1rem rgba(50, 50, 50, 0.2);
+  padding: 2rem 9%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+}
+
+header .logo {
+  font-size: 2rem;
+  color: white;
+}
+
+header .logo span {
+  color: var(--gray);
+}
+
+header .navbar a {
+  font-size: 1.2 rem;
+  margin-left: 2rem;
+  color: var(--blanco);
+  position: relative;
+  top: 0;
+  transition: top ease 0.5s;
+  -webkit-transition: top ease 0.5s;
+  -moz-transition: top ease 0.5s;
+  -ms-transition: top ease 0.5s;
+  -o-transition: top ease 0.5s;
+}
+
+header .navbar a:hover {
+  color: bisque;
+  transition: all 0.5s;
+  top: -5px;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+
+header input {
+  display: none;
+}
+
+header label {
+  cursor: pointer;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.inicio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(./images/waveFondo.png) no-repeat;
+  background-size: cover;
+  background-position: right;
+}
+
+.inicio .image img {
+  width: 30vw;
+  box-sizing: content-box;
+  padding-right: 9rem;
+  animation: float 4.5s linear infinite;
+  -webkit-animation: float 4.5s linear infinite;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0rem);
+  }
+  50% {
+    transform: translateY(1.5rem);
+  }
+}
+
+.inicio .content h3 {
+  font-size: 4.5rem;
+  color: rgb(82, 82, 82);
+  margin-left: 2rem;
+}
+
+header a {
+  transform: scale(1);
+  transition: all 4s;
+}
+
+header a:hover {
+  transform: scale(1.08);
+  transition: all 4s;
+}
+
+.inicio .content h3 span {
+  color: var(--gray);
+  margin-left: 9rem;
+}
+
+.inicio .content p {
+  font-size: 1.5rem;
+  color: rgb(93, 92, 92);
+  justify-content: center;
+}
+
+@media (max-width: 1300px) {
+  html {
+    font-size: 55%;
+  }
+}
+
+@media (max-width: 800px) {
+  .inicio .content h3 {
+    font-size: 4.5rem;
+  }
+
+  .inicio .content h3 span {
+    font-size: 4.5rem;
+    margin-left: 9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  header label {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  header .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: black;
+    padding: 1rem 2rem;
+    border-top: 0.1rem solid rgba(255, 254, 254, 0.788);
+    box-shadow: 0.5rem 0.8rem rgba(50, 50, 50, 0.1);
+    transform-origin: top;
+    transform: scaleY(0);
+    opacity: 1;
+  }
+
+  header .navbar a {
+    display: block;
+    margin: 2rem 0;
+  }
+
+  header input:checked ~ .navbar {
+    transform: scaleY(1);
+    opacity: 1;
+  }
+
+  header input:checked ~ label::before {
+    content: "\f00d";
+  }
+
+  .inicio {
+    flex-flow: column-reverse;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 49%;
+  }
+}
+
+/* custom scroll bar */
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: whitesmoke;
+}
+
+::-webkit-scrollbar-thumb {
+  background: gray;
+  border-radius: 10px;
+}
